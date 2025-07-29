@@ -23,6 +23,13 @@
       align-items: center;
       justify-content: center;
     }
+    @font-face {
+       font-family: 'Saman';
+       src: url('saman.ttf') format('truetype');
+       font-weight: normal;
+        font-style: normal;
+    }
+
     .invite-card {
       background: #fff8f6;
       border-radius: 16px;
@@ -44,7 +51,13 @@
       display: block;
       margin: 0 auto 10px auto;  /* Centers image and adds space below */
     }
-
+    .sanskrit-style {
+      font-family: 'Saman', cursive;
+      font-size: 1.35rem;
+      letter-spacing: 0.03em;
+      /* Optional overline to mimic Devanagari style */
+      text-decoration: overline;
+    }
     .subtitle {
       text-align: center;
       margin-top: 0;
@@ -161,7 +174,7 @@
 
 
     <div class="subtitle" style="margin-bottom:0.7rem;">
-      || Sree Ganeshaya Namaha ||
+    <span class="sanskrit-style">| Sree Ganeshaya Namaha |</span>
     </div>
     <div style="text-align:center;"><br>
       <b>With hearts full of joy and with the blessings of our families</b><br>
